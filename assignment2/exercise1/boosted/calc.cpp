@@ -4,7 +4,7 @@
 
 #include <vector>
 #include <iostream>
-
+#include <boost/rational.hpp>
 
 using namespace std;
 
