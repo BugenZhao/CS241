@@ -8,3 +8,5 @@ include_directories(${Boost_INCLUDE_DIRS})
 add_executable(PolyDevision 2/assignment2/exercise1/Rational.cpp 2/assignment2/exercise1/Rational.h 2/assignment2/exercise1/PolyDivision.cpp)
 
 add_executable(NewtonInterpolation 2/assignment2/exercise2/NewtonInterpolation.cpp 2/assignment2/exercise2/NewtonInterpolation.h 2/assignment2/exercise2/NITest.cpp)
+add_executable(BisectionMethod 3/assignment3/exercise1/HW3-BisectionMethod/BisectionMethod.cpp)
+add_executable(NewtonsMethod 3/assignment3/exercise1/HW3-NewtonsMethod/NewtonsMethod.cpp)
