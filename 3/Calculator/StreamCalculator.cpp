@@ -4,7 +4,7 @@
 
 #include "StreamCalculator.h"
 
-StreamCalculator::StreamCalculator(istream &in) : in(in), ts(in) {}
+StreamCalculator::StreamCalculator(std::basic_istream<char> &in) : in(in), ts(in) {}
 
 double StreamCalculator::expression() {
     double left = term();

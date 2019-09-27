@@ -6,11 +6,10 @@
 #define CS241_STREAMCALCULATOR_H
 
 #include "TokenStream.h"
-
-using std::istream;
+#include "BaseAlgorithms.h"
 
 class StreamCalculator {
-    istream &in;
+    std::basic_istream<char> &in;
     TokenStream ts;
 private:
     double expression();
@@ -20,7 +19,7 @@ private:
     double term();
 
 public:
-    explicit StreamCalculator(istream &in);
+    explicit StreamCalculator(std::basic_istream<char> &in);
 
     double calculate();
 };

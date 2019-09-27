@@ -41,7 +41,7 @@ Token TokenStream::get() {
             return Token{Token::NUMBER, val};
         }
         default:
-            throw std::runtime_error(std::string("Bad token: '") + ch + '\'');
+            throw std::runtime_error(std::string("Bad token or name: '") + ch + "..'");
     }
 }
 

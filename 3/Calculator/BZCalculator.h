@@ -7,13 +7,29 @@
 
 #include "StreamCalculator.h"
 #include <sstream>
+#include <map>
+#include <algorithm>
 
-using std::string, std::istringstream;
+using std::string, std::istringstream, std::map, std::find;
 
 class BZCalculator {
+    istringstream in;
+    StreamCalculator sc;
+    map<string, double> table;
+
+private:
+    string replaceVariables(const string &exp);
+
 public:
-    static double calculate(const string &exp);
+    BZCalculator();
+
+    double evaluate(const string &exp);
+
+    double calculate(const string &exp);
 };
 
+bool isValidVariable(const string &str);
+
+string &replace_all(string &str, const string &old_value, const string &new_value);
 
 #endif //CS241_BZCALCULATOR_H

@@ -8,7 +8,9 @@
 using namespace std;
 
 int main() {
+    BZCalculator calc;
     string exp;
+    cout << "Calculator by BugenZhao." << endl;
     while (true) {
         cout << "calc> ";
         if (!getline(cin, exp) || exp == "exit" || exp == "EXIT") {
@@ -17,7 +19,7 @@ int main() {
         }
         if (exp.empty()) continue;
         try {
-            cout << BZCalculator::calculate(exp) << endl;
+            cout << calc.evaluate(exp) << endl;
         } catch (const exception &e) {
             cerr << "Error: " << e.what() << endl;
         }
