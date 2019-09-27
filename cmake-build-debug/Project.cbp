@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\Boost-1.71.0\;CMake Files\..\..\..\..\usr\local\lib\cmake\boost_headers-1.71.0\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Calculator">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/Calculator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 Calculator"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Calculator/fast">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/Calculator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 Calculator/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewtonsMethod">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/NewtonsMethod" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 NewtonsMethod"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewtonsMethod/fast">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/NewtonsMethod" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 NewtonsMethod/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PolyDevision">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/PolyDevision" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 PolyDevision"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PolyDevision/fast">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/PolyDevision" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 PolyDevision/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BisectionMethod">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/BisectionMethod" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 BisectionMethod"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BisectionMethod/fast">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/BisectionMethod" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 BisectionMethod/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewtonInterpolation">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/NewtonInterpolation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 NewtonInterpolation"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="NewtonInterpolation/fast">
+				<Option output="/Users/bugenzhao/Documents/CS241/cmake-build-debug/NewtonInterpolation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bugenzhao/Documents/CS241/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 NewtonInterpolation/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/Users/bugenzhao/Documents/CS241/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/2/assignment2/exercise1/PolyDivision.cpp">
+			<Option target="PolyDevision"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/2/assignment2/exercise1/Rational.cpp">
+			<Option target="PolyDevision"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/2/assignment2/exercise1/Rational.h">
+			<Option target="PolyDevision"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/2/assignment2/exercise2/NITest.cpp">
+			<Option target="NewtonInterpolation"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/2/assignment2/exercise2/NewtonInterpolation.cpp">
+			<Option target="NewtonInterpolation"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/2/assignment2/exercise2/NewtonInterpolation.h">
+			<Option target="NewtonInterpolation"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/BZCalculator.cpp">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/BZCalculator.h">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/BaseAlgorithms.cpp">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/BaseAlgorithms.h">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/StreamCalculator.cpp">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/StreamCalculator.h">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/Token.cpp">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/Token.h">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/TokenStream.cpp">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/TokenStream.h">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/Calculator/main.cpp">
+			<Option target="Calculator"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/assignment3/exercise1/HW3-BisectionMethod/BisectionMethod.cpp">
+			<Option target="BisectionMethod"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/3/assignment3/exercise1/HW3-NewtonsMethod/NewtonsMethod.cpp">
+			<Option target="NewtonsMethod"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/../../../../usr/local/lib/cmake/Boost-1.71.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/../../../../usr/local/lib/cmake/Boost-1.71.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/../../../../usr/local/lib/cmake/boost_headers-1.71.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/Users/bugenzhao/Documents/CS241/../../../../usr/local/lib/cmake/boost_headers-1.71.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

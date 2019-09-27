@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bugenzhao/Documents/CS241/3/assignment3/exercise1/HW3-BisectionMethod/BisectionMethod.cpp
+iostream
+-
+
