@@ -36,6 +36,8 @@ double StreamCalculator::primary() {
         }
         case Token::NUMBER:
             return token.value;
+        case '+':
+            return ts.get().value;
         case '-':
             return -ts.get().value;
         default:
