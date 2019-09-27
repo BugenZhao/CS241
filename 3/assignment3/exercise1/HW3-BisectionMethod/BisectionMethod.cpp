@@ -3,12 +3,11 @@
 //
 
 #include <iostream>
-#include <cmath>
 
 using std::cout, std::endl;
 
 auto f = [](double x) { return 10.0 * x * x * x - 8.3 * x * x + 2.295 * x - 0.21141; };
-auto sgn = [](double x) { return fabs(x) == x; };
+auto sgn = [](double x) { return x > 0.0; };
 
 double get_root_b(double a, double b) {
     double m = 0.0;
