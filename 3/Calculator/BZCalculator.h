@@ -7,8 +7,8 @@
 
 #include "StreamCalculator.h"
 #include <sstream>
-#include <map>
 #include <algorithm>
+#include <map>
 
 using std::string, std::istringstream, std::map, std::find;
 
