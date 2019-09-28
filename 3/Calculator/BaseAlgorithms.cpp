@@ -5,10 +5,10 @@
 #include "BaseAlgorithms.h"
 
 string strip(const string &str, char ch) {
-    int i = 0;
+    string::size_type i = 0;
     while (str[i] == ch)
         i++;
-    int j = str.size() - 1;
+    string::size_type j = str.size() - 1;
     while (str[j] == ch)
         j--;
     return str.substr(i, j + 1 - i);

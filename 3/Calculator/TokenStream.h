@@ -12,7 +12,7 @@ using std::istream;
 
 class TokenStream {
     istream &in;
-    Token buffer = {};
+    Token buffer;
     bool full = false;
 public:
     explicit TokenStream(istream &in);

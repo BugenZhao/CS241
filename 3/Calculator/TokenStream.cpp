@@ -2,7 +2,6 @@
 // Created by Bugen Zhao on 2019/9/27.
 //
 
-#include "StreamCalculator.h"
 #include "TokenStream.h"
 
 TokenStream::TokenStream(istream &in) : in(in) {}

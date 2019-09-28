@@ -5,11 +5,22 @@
 #ifndef CS241_TOKEN_H
 #define CS241_TOKEN_H
 
+#include <stdexcept>
+#include <string>
 
-struct Token {
+class Token {
+    char _kind{};
+    double _value{};
+public:
     constexpr static char NUMBER = '8';
-    char kind;
-    double value;
+
+    Token();
+
+    Token(char kind, double value);
+
+    char kind() const;
+
+    double value() const;
 };
 
 #endif //CS241_TOKEN_H
