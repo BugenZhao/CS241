@@ -12,9 +12,9 @@ class StreamCalculator {
     std::basic_istream<char> &in;
     TokenStream ts;
 private:
-    double expression();
+    double expr();
 
-    double primary();
+    double factor();
 
     double term();
 

@@ -6,7 +6,7 @@
 
 StreamCalculator::StreamCalculator(std::basic_istream<char> &in) : in(in), ts(in) {}
 
-double StreamCalculator::expression() {
+double StreamCalculator::expr() {
     double left = term();
     while (true) {
         Token token = ts.get();
@@ -25,11 +25,11 @@ double StreamCalculator::expression() {
     }
 }
 
-double StreamCalculator::primary() {
+double StreamCalculator::factor() {
     Token token = ts.get();
     switch (token.kind()) {
         case '(': {
-            double d = expression();
+            double d = expr();
             token = ts.get();
             if (token.kind() != ')') throw std::runtime_error(") expected.");
             return d;
@@ -46,15 +46,17 @@ double StreamCalculator::primary() {
 }
 
 double StreamCalculator::term() {
-    double left = primary();
+    double left = factor();
     while (true) {
         Token token = ts.get();
         switch (token.kind()) {
             case '*':
-                left *= primary();
+                left *= factor();
                 break;
             case '/': {
-                left /= primary();
+                double d = factor();
+                if (d == 0) throw std::runtime_error("Division by zero");
+                left /= d;
                 break;
             }
             case '%':
@@ -76,7 +78,7 @@ double StreamCalculator::calculate() {
                 return val;
             default: {
                 ts.putback(token);
-                val = expression();
+                val = expr();
             }
         }
     }

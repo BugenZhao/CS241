@@ -11,3 +11,4 @@ add_executable(NewtonInterpolation 2/assignment2/exercise2/NewtonInterpolation.c
 add_executable(BisectionMethod 3/assignment3/exercise1/HW3-BisectionMethod/BisectionMethod.cpp)
 add_executable(NewtonsMethod 3/assignment3/exercise1/HW3-NewtonsMethod/NewtonsMethod.cpp)
 add_executable(Calculator 3/Calculator/main.cpp 3/Calculator/Token.cpp 3/Calculator/TokenStream.cpp 3/Calculator/StreamCalculator.cpp 3/Calculator/BZCalculator.cpp 3/Calculator/BZCalculator.h 3/Calculator/BaseAlgorithms.cpp 3/Calculator/BaseAlgorithms.h)
+add_executable(LinearSolver 4/assignment4/LinearSolver.cpp)
