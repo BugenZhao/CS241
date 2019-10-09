@@ -82,12 +82,11 @@ vector<double> solve(vector<vector<double>> v, int choice, vector<double> initia
                 }
 
                 if (t != 0) {
-                    double d = 0;
+                    double max_d = 0;
                     for (int i = 0; i < n; ++i) {
-                        d += pow((ans[i] - ans_new[i]), 2);
+                        max_d = max(max_d, fabs(ans_new[i] - ans[i]));
                     }
-                    d = sqrt(d);
-                    if (d < D) {
+                    if (max_d < D) {
                         ok = true;
                         break;
                     }
