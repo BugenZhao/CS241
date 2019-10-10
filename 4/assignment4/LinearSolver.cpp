@@ -98,7 +98,7 @@ vector<double> solve(vector<vector<double>> v, int choice, vector<double> initia
                 cerr << "Maximum number of iterations exceeded!" << endl;
                 throw runtime_error("");
             }
-            return ans;
+            return ans_new;
         }
         case GAUSS: {
             int n = v.size();
