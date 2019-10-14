@@ -5,15 +5,15 @@
 #ifndef CS241_MYSORT_H
 #define CS241_MYSORT_H
 
-template<typename Elem>
-struct DefaultComparator {
-    bool operator()(const Elem &a, const Elem &b) {
-        return a < b;
+template<typename Iterator>
+struct DefaultIteratorComparator {
+    bool operator()(const Iterator &a, const Iterator &b) {
+        return *a < *b;
     }
 };
 
 template<typename Iterator, typename Comparator>
-Iterator partition(Iterator first, Iterator last, Comparator comp) {
+Iterator partition(Iterator first, Iterator last, const Comparator &comp) {
     auto v = *first;
     --last;
     while (true) {
@@ -29,11 +29,11 @@ Iterator partition(Iterator first, Iterator last, Comparator comp) {
 
 template<typename Iterator>
 void mySort(Iterator first, Iterator last) {
-    mySort(first, last, DefaultComparator<Iterator>());
+    mySort(first, last, DefaultIteratorComparator<Iterator>());
 }
 
 template<typename Iterator, typename Comparator>
-void mySort(Iterator first, Iterator last, Comparator comp) {
+void mySort(Iterator first, Iterator last, const Comparator &comp) {
     if (last - first < 2) return;
     Iterator mid = partition(first, last, comp);
     mySort(first, mid, comp);

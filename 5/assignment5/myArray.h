@@ -8,13 +8,13 @@
 #include <stdexcept>
 
 namespace bz_array_exceptions {
-    class IllegalIndex : public std::exception {
+    class IllegalIndexException : public std::exception {
     };
 
-    class IndexOutOfBound : public std::exception {
+    class IndexOutOfBoundException : public std::exception {
     };
 
-    class IllegalIterators : public std::exception {
+    class DifferentArraysException : public std::exception {
     };
 }
 
@@ -29,11 +29,14 @@ private:
     void resize(unsigned new_capacity);
 
 public :
+    typedef Elem value_type;
+
     class iterator {
         myArray *pMyArray;
         unsigned cur;
     public:
-        iterator(myArray *arr, unsigned i) : pMyArray(arr), cur(i) {}
+        iterator(myArray *arr, unsigned i) : pMyArray(arr), cur(i) {
+        }
 
         Elem &operator*() {
             return (*pMyArray)[cur];
@@ -66,7 +69,7 @@ public :
         }
 
         bool operator<(const iterator &rhs) const {
-            if (pMyArray != rhs.pMyArray) throw bz_array_exceptions::IllegalIterators();
+            if (pMyArray != rhs.pMyArray) throw bz_array_exceptions::DifferentArraysException();
             return cur < rhs.cur;
         }
 
@@ -91,7 +94,7 @@ public :
         }
 
         int operator-(const iterator &rhs) {
-            if (pMyArray != rhs.pMyArray) throw bz_array_exceptions::IllegalIterators();
+            if (pMyArray != rhs.pMyArray) throw bz_array_exceptions::DifferentArraysException();
             return (int) cur - (int) (rhs.cur);
         }
 
@@ -136,7 +139,7 @@ void myArray<Elem>::push_back(const Elem &v) {
 
 template<typename Elem>
 void myArray<Elem>::pop_back() {
-    if (N == 0) throw bz_array_exceptions::IllegalIndex();
+    if (N == 0) throw bz_array_exceptions::IllegalIndexException();
     else --N;
     if (N <= C / 4) resize(C / 2);
 }
@@ -163,8 +166,8 @@ int myArray<Elem>::capacity() const {
 
 template<typename Elem>
 Elem &myArray<Elem>::operator[](const int i) const {
-    if (i < 0) throw bz_array_exceptions::IllegalIndex();
-    if (i >= N) throw bz_array_exceptions::IndexOutOfBound();
+    if (i < 0) throw bz_array_exceptions::IllegalIndexException();
+    if (i >= N) throw bz_array_exceptions::IndexOutOfBoundException();
     else return array[i];
 }
 
