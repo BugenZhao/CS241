@@ -7,7 +7,8 @@
 
 using namespace std;
 typedef int T; // Change the type here
-constexpr bool DEBUG = true;
+
+constexpr bool DEBUG = false;
 
 
 int main() {

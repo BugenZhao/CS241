@@ -14,7 +14,7 @@ std::random_device rd;
 std::mt19937 gen(rd());
 
 template<typename T>
-int bz_partition(vector<T> &A, int v_index, int lo, int hi) { // [lo,hi]
+int bz_partition(vector<T> &A, int v_index, int lo, int hi) { // [lo, hi]
     T pivot = A[v_index];
     std::swap(A[lo], A[v_index]);
     while (true) {
@@ -104,6 +104,7 @@ T d_select(vector<T> &A, int i, int lo, int hi) {
             break;
         }
     }
+    if (v_index == -1) throw std::runtime_error("Pivot not found");
 
     int j = bz_partition(A, v_index, lo, hi);
     if (j == i) return pivot;
