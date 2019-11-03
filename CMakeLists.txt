@@ -14,3 +14,4 @@ add_executable(Calculator 3/Calculator/main.cpp 3/Calculator/Token.cpp 3/Calcula
 add_executable(LinearSolver 4/assignment4/LinearSolver.cpp)
 add_executable(GPTest 5/assignment5/main.cpp 5/assignment5/myArray.h 5/assignment5/myData.h 5/assignment5/mySort.h)
 add_executable(HMTest 6/assignment6/main.cpp 6/assignment6/hm.hpp)
+add_executable(DP 8/assignment8/main.cpp)
