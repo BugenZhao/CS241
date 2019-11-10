@@ -24,7 +24,7 @@ namespace MinimumGE {
     typedef vector<bool> Bits;
 
     Bits encode(double x) {
-        if (x < lower || x > upper) throw std::invalid_argument("");
+        if (x < lower || x > upper) throw std::invalid_argument("encode: x out of range");
         auto t = static_cast<unsigned>((x - lower) * ((1u << SIZE) - 1U) / (upper - lower));
         std::bitset<SIZE> tmp((t));
 

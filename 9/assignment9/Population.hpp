@@ -80,7 +80,7 @@ public:
         lastAvgFitness = avgFitness;
 
         double minFitness = *std::min_element(fitness.begin(), fitness.end());
-        if (minFitness < 0) throw std::runtime_error("negative fitness value");
+        if (minFitness < 0) throw std::runtime_error("update: negative fitness value");
         for (int i = 0; i < population.size(); ++i) {
             fitness[i] -= minFitness;
         }
@@ -95,9 +95,9 @@ public:
         vector<Chromosome> newPopulation;
         newPopulation.reserve(population.size());
         for (int i = 0; i < population.size(); ++i) {
-            double real = dis(gen);
             int pos = 0;
             do {
+                double real = dis(gen);
                 pos = std::lower_bound(cumFitness.begin(), cumFitness.end(), real) - cumFitness.begin();
             } while (pos == population.size());
             newPopulation.push_back(population[pos]);

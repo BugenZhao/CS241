@@ -21,7 +21,7 @@ namespace StringGE {
     std::uniform_int_distribution<> dis(0, GENES.size() - 1);
 
     auto fitnessFunction = [](const string &str) -> int {
-        if (str.size() != TARGET.size()) throw std::invalid_argument("");
+        if (str.size() != TARGET.size()) throw std::invalid_argument("fitness: wrong string length");
         int result = 0;
         for (int i = 0; i < TARGET.size(); ++i) {
             result += str[i] == TARGET[i];
