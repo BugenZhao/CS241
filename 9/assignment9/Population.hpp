@@ -22,7 +22,7 @@ private:
     std::mt19937 gen;
     const int chromosomeSize;
     bool ok;
-    double lastAvgFitness;
+    double bestAvgFitness;
 
 public:
     Population(const vector<Chromosome> &population,
@@ -34,7 +34,7 @@ public:
             gen(std::random_device()()),
             chromosomeSize(population[0].size()),
             ok(false),
-            lastAvgFitness(INFINITY) {}
+            bestAvgFitness(0.0 - INFINITY) {}
 
     void crossover(double pc) {
         vector<int> updateIndex(population.size());
@@ -76,8 +76,8 @@ public:
         }
 
         double avgFitness = std::accumulate(fitness.begin(), fitness.end(), 0.0) / population.size();
-        if (abs(avgFitness - lastAvgFitness) < 1e-3) ok = true;
-        lastAvgFitness = avgFitness;
+        if (abs(avgFitness - bestAvgFitness) / bestAvgFitness < 1e-4) ok = true;
+        bestAvgFitness = std::max(bestAvgFitness, avgFitness);
 
         double minFitness = *std::min_element(fitness.begin(), fitness.end());
         if (minFitness < 0) throw std::runtime_error("update: negative fitness value");
@@ -88,7 +88,7 @@ public:
         vector<double> cumFitness(population.size());
         cumFitness[0] = fitness[0];
         for (int i = 1; i < population.size(); ++i) {
-            cumFitness[i] = cumFitness[i - 1] + getFitness(population[i]);
+            cumFitness[i] = cumFitness[i - 1] + fitness[i];
         }
         std::uniform_real_distribution<> dis(0.0, cumFitness[population.size() - 1]);
 

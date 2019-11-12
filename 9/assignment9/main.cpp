@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int exercise1() {
+int exercise1(int maxLoopTimes = 5000) {
     vector<string> v;
     v.reserve(StringGE::N);
     for (int i = 0; i < StringGE::N; ++i) {
@@ -20,7 +20,7 @@ int exercise1() {
                                StringGE::mutationFunction);
     GE<string> ge(initial);
 
-    for (int i = 0; i < 5000; ++i) {
+    for (int i = 0; i < maxLoopTimes; ++i) {
         ge.run();
         auto optimal = ge.getPopulation().getOptimal();
         cout << "Generation " << setw(4) << i + 1
@@ -34,7 +34,7 @@ int exercise1() {
     return -1;
 }
 
-int exercise2() {
+double exercise2(int maxLoopTimes = 5000, bool p = true) {
     using MinimumGE::Bits;
     vector<Bits> v;
     v.reserve(MinimumGE::N);
@@ -47,24 +47,36 @@ int exercise2() {
                              MinimumGE::mutationFunction);
     GE<Bits> ge(initial, 0.8, 0.002);
 
-    for (int i = 0; i < 5000; ++i) {
+    for (int i = 0; i < maxLoopTimes; ++i) {
         ge.run();
         auto optimal = ge.getPopulation().getOptimal();
-        cout << "Generation " << setw(4) << i + 1
-             << "    Answer: " << MinimumGE::decode(optimal) << endl;
+        if (p)
+            cout << "Generation " << setw(4) << i + 1
+                 << "    Answer: " << MinimumGE::decode(optimal) << endl;
         if (ge.getPopulation().isOk()) {
             cout << "Done." << endl;
-            break;
+            return MinimumGE::decode(optimal);
         }
     }
 
     return -1;
 }
 
+void test() {
+    int N = 100;
+    int count = 0;
+    for (int i = 0; i < N; ++i) {
+        auto ans = exercise2(200, false);
+        count += (ans > 11.08 && ans < 11.10);
+    }
+    cout << count << "/" << N << endl;
+    // 96/100
+}
 
 int main() {
     cout << "[EXERCISE 1]" << endl;
     exercise1();
     cout << "\n\n\n" << "[EXERCISE 2]" << endl;
     exercise2();
+//    test();
 }
