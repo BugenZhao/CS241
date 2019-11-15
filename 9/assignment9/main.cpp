@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int exercise1(int maxLoopTimes = 5000) {
+int exercise1(int maxIterTimes = 5000) {
     vector<string> v;
     v.reserve(StringGE::N);
     for (int i = 0; i < StringGE::N; ++i) {
@@ -20,7 +20,7 @@ int exercise1(int maxLoopTimes = 5000) {
                                StringGE::mutationFunction);
     GE<string> ge(initial);
 
-    for (int i = 0; i < maxLoopTimes; ++i) {
+    for (int i = 0; i < maxIterTimes; ++i) {
         ge.run();
         auto optimal = ge.getPopulation().getOptimal();
         cout << "Generation " << setw(4) << i + 1
@@ -34,7 +34,7 @@ int exercise1(int maxLoopTimes = 5000) {
     return -1;
 }
 
-double exercise2(int maxLoopTimes = 5000, bool p = true) {
+double exercise2(int maxIterTimes = 5000, bool p = true) {
     using MinimumGE::Bits;
     vector<Bits> v;
     v.reserve(MinimumGE::N);
@@ -47,15 +47,15 @@ double exercise2(int maxLoopTimes = 5000, bool p = true) {
                              MinimumGE::mutationFunction);
     GE<Bits> ge(initial, 0.8, 0.002);
 
-    for (int i = 0; i < maxLoopTimes; ++i) {
+    for (int i = 0; i < maxIterTimes; ++i) {
         ge.run();
-        auto optimal = ge.getPopulation().getOptimal();
+        auto optimal = MinimumGE::decode(ge.getPopulation().getOptimal());
         if (p)
             cout << "Generation " << setw(4) << i + 1
-                 << "    Answer: " << MinimumGE::decode(optimal) << endl;
+                 << "    Answer: " << optimal << endl;
         if (ge.getPopulation().isOk()) {
             cout << "Done." << endl;
-            return MinimumGE::decode(optimal);
+            return optimal;
         }
     }
 
@@ -67,10 +67,9 @@ void test() {
     int count = 0;
     for (int i = 0; i < N; ++i) {
         auto ans = exercise2(200, false);
-        count += (ans > 11.08 && ans < 11.10);
+        count += (ans >= 11.08 && ans <= 11.10);
     }
-    cout << count << "/" << N << endl;
-    // 96/100
+    cout << count << "/" << N << endl;  // 96/100
 }
 
 int main() {
@@ -78,5 +77,4 @@ int main() {
     exercise1();
     cout << "\n\n\n" << "[EXERCISE 2]" << endl;
     exercise2();
-//    test();
 }
