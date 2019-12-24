@@ -17,7 +17,7 @@ public:
             for (int j = 1; j <= N; ++j) {
                 dp[i][j] = max({dp[i - 1][j],
                                 dp[i][j - 1],
-                                dp[i - 1][j - 1] + (text1[i] == text2[j])
+                                dp[i - 1][j - 1] + (text1[i - 1] == text2[j - 1])
                                });
             }
         }
@@ -86,8 +86,8 @@ public:
 int main(int argc, const char *argv[]) {
 
     //*********** Test Longest Common Subsequence ***********//
-    string text1 = "springtime";
-    string text2 = "printing";
+    string text1 = "papmretkborsrurgtina";
+    string text2 = "nsnupotstmnkfcfavaxgl";
     LCS lcs = LCS();
     cout << "Test Longest Common Subsequence..." << endl;
     cout << lcs.LongestCommonSubsequence(text1, text2) << endl;
